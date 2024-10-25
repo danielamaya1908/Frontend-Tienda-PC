@@ -1,0 +1,211 @@
+body {
+  background-color: white;
+  color: white;
+  margin: 0;
+  padding: 0;
+  padding-top: auto;
+  /* Ajusta este valor según la altura de tu menú de navegación */
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 56px);
+  /* Ajusta este valor según la altura de tu menú de navegación */
+  overflow: hidden;
+}
+
+.customImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  color: white;
+  width: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-custom-bg {
+  background-color: #F8F9FA;
+  /* Color de fondo de la tarjeta */
+}
+
+.card-img-container {
+  background-color: #F8F9FA;
+  /* Color de fondo de la imagen */
+  height: 150px;
+  /* Altura fija para el contenedor de la imagen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-custom-text {
+  font-size: 0.75rem;
+  /* Tamaño del texto más pequeño (12px) */
+}
+
+.color-757575ff {
+  color: #757575ff;
+}
+
+.workingImageSection {
+  background-color: rgba(50, 50, 50, 0.6);
+  padding: 20px;
+}
+
+.transparentBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+/* Estilos para el menú fijo */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+/* Estilos adicionales */
+.navbar {
+  padding: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+/* Cambia el ancho de la barra de desplazamiento */
+::-webkit-scrollbar {
+  width: 5px;
+  /* Ancho deseado */
+}
+
+/* Cambia el estilo de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color de fondo */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Color del "thumb" o manija */
+}
+
+.productCard {
+  /* estilos para las tarjetas de productos */
+  height: 100%;
+  /* Ajustar altura si es necesario */
+}
+
+.productImage {
+  height: 100%;
+  /* Ajuste para que la imagen ocupe toda la tarjeta */
+  width: 100%;
+  /* Ajuste para que la imagen ocupe toda la tarjeta */
+  object-fit: cover;
+  /* Ajusta la imagen para que se vea completa */
+}
+
+.homeContainer h2 {
+  text-align: center;
+  /* Alineación centrada */
+  margin-top: 20px;
+  /* Espacio superior */
+  font-size: 24px;
+  /* Tamaño de fuente */
+  color: #000000;
+  /* Color del texto */
+}
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+.fadeOut {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .content {
+    width: 80%;
+  }
+
+  .card-img-container {
+    height: 120px;
+    /* Ajusta la altura según sea necesario */
+  }
+}
+
+@media (max-width: 992px) {
+  .content {
+    width: 90%;
+  }
+
+  .card-img-container {
+    height: 100px;
+    /* Ajusta la altura según sea necesario */
+  }
+
+  .homeContainer h2 {
+    font-size: 20px;
+    /* Tamaño de fuente más pequeño para pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    /* Ajusta la altura para pantallas más pequeñas */
+  }
+
+  .content {
+    width: 95%;
+    font-size: 0.9rem;
+    /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+
+  .card-img-container {
+    height: 80px;
+    /* Ajusta la altura según sea necesario */
+  }
+
+  .homeContainer h2 {
+    font-size: 18px;
+    /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    width: 100%;
+    font-size: 0.8rem;
+    /* Tamaño de fuente aún más pequeño para pantallas muy pequeñas */
+  }
+
+  .card-img-container {
+    height: 60px;
+    /* Ajusta la altura según sea necesario */
+  }
+
+  .homeContainer h2 {
+    font-size: 16px;
+    /* Tamaño de fuente más pequeño para pantallas muy pequeñas */
+  }
+}

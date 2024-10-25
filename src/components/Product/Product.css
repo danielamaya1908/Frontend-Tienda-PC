@@ -1,0 +1,22 @@
+.sidebar {
+    background-color: #343a40;
+    /* Color del fondo del menú */
+    height: 100vh;
+    /* Ocupa toda la altura de la pantalla */
+    position: fixed;
+    /* Fija el menú en su lugar */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Capas del menú */
+}
+
+.main-content {
+    margin-left: 200px;
+    /* Ajuste en el margen para el contenido principal */
+}
+
+.card {
+    margin-top: 20px;
+    /* Espacio para las tarjetas */
+}
