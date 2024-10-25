@@ -17,7 +17,7 @@ const UsersList = () => {
     useEffect(() => {
         const getUsers = async () => {
             try {
-                const response = await axios.get('http://localhost:3005/users');
+                const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/users');
                 if (Array.isArray(response.data.users)) {
                     setUsers(response.data.users);
                 } else {
@@ -46,7 +46,7 @@ const UsersList = () => {
 
     const handleDelete = async (id) => {
         try {
-            await axios.delete(`http://localhost:3005/users/${id}`);
+            await axios.delete(`https://backend-tienda-mac-production.up.railway.app/users/${id}`);
             setUsers(users.filter(user => user.id !== id));
         } catch (error) {
             console.error('Error al eliminar el usuario:', error);
@@ -57,10 +57,10 @@ const UsersList = () => {
         e.preventDefault();
         try {
             if (isUpdateMode) {
-                const response = await axios.put(`http://localhost:3005/users/${formData.id}`, formData);
+                const response = await axios.put(`https://backend-tienda-mac-production.up.railway.app/users/${formData.id}`, formData);
                 setUsers(users.map(user => user.id === formData.id ? response.data.user : user));
             } else {
-                const response = await axios.post('http://localhost:3005/users', formData);
+                const response = await axios.post('https://backend-tienda-mac-production.up.railway.app/users', formData);
                 setUsers([...users, response.data.user]);
             }
             setShowForm(false);

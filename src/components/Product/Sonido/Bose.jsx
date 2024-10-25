@@ -12,7 +12,7 @@ const Bose = () => {
     const fetchSonidoProducts = async () => {
       try {
         const responses = await Promise.all([
-          axios.get('http://localhost:3005/products/category/Parlantes/subcategory/Parlante%20Portátil')
+          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Parlantes/subcategory/Parlante%20Portátil')
         ]);
         
         const products = responses.flatMap(response => response.data);
@@ -20,9 +20,9 @@ const Bose = () => {
 
         products.forEach(async (product) => {
           try {
-            const imageResponse = await axios.get(`http://localhost:3005/products/${product.id}/images`);
+            const imageResponse = await axios.get(`https://backend-tienda-mac-production.up.railway.app/products/${product.id}/images`);
             const imageFileNames = imageResponse.data;
-            const imageUrls = imageFileNames.map(fileName => `http://localhost:3005/images/${fileName}`);
+            const imageUrls = imageFileNames.map(fileName => `https://backend-tienda-mac-production.up.railway.app/images/${fileName}`);
             setProductImages(prevState => ({ ...prevState, [product.id]: imageUrls }));
           } catch (error) {
             console.error(`Error getting images for product ${product.id}:`, error);

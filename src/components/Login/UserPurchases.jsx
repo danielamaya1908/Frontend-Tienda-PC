@@ -29,7 +29,7 @@ const UserPurchases = () => {
         if (!token) throw new Error('No se encontró el token en localStorage.');
 
         // Obtener las compras
-        const response = await axios.get('http://localhost:3005/auth/purchases', {
+        const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/auth/purchases', {
           headers: { 'x-auth-token': token },
         });
 
@@ -40,7 +40,7 @@ const UserPurchases = () => {
             ...purchase,
             date: new Date(purchase.createdAt),
             productName: product ? product.name : 'No hay producto relacionado',
-            imageUrl: imagePath ? `http://localhost:3005/images/${imagePath}` : null,
+            imageUrl: imagePath ? `https://backend-tienda-mac-production.up.railway.app/images/${imagePath}` : null,
           };
         });
 
@@ -56,7 +56,7 @@ const UserPurchases = () => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await axios.get('http://localhost:3005/auth/me', {
+        const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/auth/me', {
           headers: { 'x-auth-token': token },
         });
 
