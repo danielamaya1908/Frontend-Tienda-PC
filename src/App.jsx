@@ -17,13 +17,13 @@ import Color from './components/Color/Color';
 import Condition from './components/Condition/Condition';
 import Capacity from './components/Capacity/Capacity';
 import ProductDetail from './components/Product/ProductDetail';
-import AccesoriosParaCelulares from './components/Product/Celulares/AccesoriosParaCelulares';
+/* import AccesoriosParaCelulares from './components/Product/Celulares/AccesoriosParaCelulares';
 import OfertasCel from './components/Product/Celulares/OfertasCel';
 import Poco from './components/Product/Celulares/';
 import Xiaomi from './components/Product/Celulares/Xiaomi';
 import Samsung from './components/Product/Celulares/Samsung';
 import Iphone from './components/Product/Celulares/iPhone';
-import Usados from './components/Product/Celulares/Usados.jsx';
+import Usados from './components/Product/Celulares/Usados.jsx'; */
 /* import IpadAll from './components/Product/iPad/iPadAll';
 import Ipad from './components/Product/iPad/iPad';
 import Ipadmini from './components/Product/iPad/iPadMini';
