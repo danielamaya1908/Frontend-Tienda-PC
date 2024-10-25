@@ -17,18 +17,14 @@ import Color from './components/Color/Color';
 import Condition from './components/Condition/Condition';
 import Capacity from './components/Capacity/Capacity';
 import ProductDetail from './components/Product/ProductDetail';
-import Iphone12 from './components/Product/iPhone/iPhone12';
-import Iphone13pro from './components/Product/iPhone/iPhone13pro';
-import Iphone13 from './components/Product/iPhone/Iphone13';
-import Iphone14 from './components/Product/iPhone/iPhone14';
-import Iphone14pro from './components/Product/iPhone/iPhone14pro';
-import Iphone15pro from './components/Product/iPhone/iPhone15pro';
-import Iphone15 from './components/Product/iPhone/iPhone15';
-import IphoneSE from './components/Product/iPhone/iPhoneSE';
-import Iphone11 from './components/Product/iPhone/iPhone11';
-import IphoneAll from './components/Product/iPhone/iPhoneAll';
-import IphoneUsed from './components/Product/iPhone/iPhoneUsed';
-import IpadAll from './components/Product/iPad/iPadAll';
+import AccesoriosParaCelulares from './components/Product/Celulares/AccesoriosParaCelulares';
+import OfertasCel from './components/Product/Celulares/OfertasCel';
+import Poco from './components/Product/Celulares/';
+import Xiaomi from './components/Product/Celulares/Xiaomi';
+import Samsung from './components/Product/Celulares/Samsung';
+import Iphone from './components/Product/Celulares/iPhone';
+import Usados from './components/Product/Celulares/Usados.jsx';
+/* import IpadAll from './components/Product/iPad/iPadAll';
 import Ipad from './components/Product/iPad/iPad';
 import Ipadmini from './components/Product/iPad/iPadMini';
 import IpadAir from './components/Product/iPad/iPadAir';
@@ -36,15 +32,15 @@ import IpadPro from './components/Product/iPad/iPadPro';
 import IpadUsed from './components/Product/iPad/iPadUsed';
 import MacAll from './components/Product/Mac/MacAll';
 import MacMini from './components/Product/Mac/MacMini';
-import MacStudio from './components/Product/Mac/MacStudio';
+import MacStudio from './components/Product/Mac/MacStudio'; */
 /* import StudioDisplaysl from './components/Product/Mac/StudioDisplaysl'; */
 import FormEquipo from './components/SoporteTecnico/FormEquipo';
 import SoporteTecnico from './components/SoporteTecnico/SoporteTecnico';
 import SoporteTecnicoCliente from './components/SoporteTecnico/SoporteTecnicoCliente';
 import SoporteTecnicoClienteDetalle from './components/SoporteTecnico/SoporteTecnicoClienteDetalle';
 import SoporteTecnicoDetalle from './components/SoporteTecnico/SoporteTecnicoDetalle';
-import MacbookPro from './components/Product/Mac/MacbookPro';
-import MacbookAir from './components/Product/Mac/MacbookAir';
+/* import MacbookPro from './components/Product/Mac/MacbookPro'; */
+/* import MacbookAir from './components/Product/Mac/MacbookAir';
 import Imac from './components/Product/Mac/iMac';
 import MacUsed from './components/Product/Mac/MacUsed';
 import Airpods from './components/Product/AirPods/Airpods';
@@ -74,7 +70,7 @@ import Jbl from './components/Product/Sonido/Jbl';
 import Bose from './components/Product/Sonido/Bose';
 import Harman from './components/Product/Sonido/Harman';
 import AppleTV4k from './components/Product/AppleTV/AppleTV4k';
-import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar';
+import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar'; */
 import LoNuevo from './components/SubNavbar/LoNuevo';
 import Cart from './components/Cart/Cart';
 import { CartProvider } from './context/CartContext';
@@ -237,19 +233,15 @@ function App() {
           <Route path="/soportetecnicocliente/:id" element={<SoporteTecnicoClienteDetalle />} />
           <Route path="/warranty" element={<AppleWarranty />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/iphone12" element={<Iphone12 />} />
-          <Route path="/FormEquipo" element={<FormEquipo />} />
-          <Route path="/iphone13pro" element={<Iphone13pro />} />
-          <Route path="/iphone13" element={<Iphone13 />} />
-          <Route path="/iphone14pro" element={<Iphone14pro />} />
-          <Route path="/iphone14" element={<Iphone14 />} />
-          <Route path="/iphone15pro" element={<Iphone15pro />} />
-          <Route path="/iphone15" element={<Iphone15 />} />
-          <Route path="/iphoneSE" element={<IphoneSE />} />
-          <Route path="/iphone11" element={<Iphone11 />} />
-          <Route path="/iphoneAll" element={<IphoneAll />} />
-          <Route path="/iPhoneUsed" element={<IphoneUsed />} />
-          <Route path="/ipadAll" element={<IpadAll />} />
+          <Route path="/OfertasCel" element={<OfertasCel />} />
+          <Route path="/Poco" element={<Poco />} />
+          <Route path="/Xiaomi" element={<Xiaomi />} />
+          <Route path="/Samsung" element={<Samsung />} />
+          <Route path="/AccesoriosParaCelulares" element={<AccesoriosParaCelulares />} />
+          <Route path="/iphone" element={<Iphone />} />
+          <Route path="/Usados" element={<Usados />} />
+          <Route path="/Ofertas" element={<Ofertas />} />
+         {/*  <Route path="/ipadAll" element={<IpadAll />} />
           <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
           <Route path="/ipad" element={<Ipad />} />
@@ -257,9 +249,9 @@ function App() {
           <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
-          <Route path="/MacbookPro" element={<MacbookPro />} />
+          <Route path="/MacbookPro" element={<MacbookPro />} /> */}
           {/* <Route path="/StudioDisplaysl" element={<StudioDisplaysl />} /> */}
-          <Route path="/imac" element={<Imac />} />
+         {/*  <Route path="/imac" element={<Imac />} />
           <Route path="/MacUsed" element={<MacUsed />} />
           <Route path="/MacStudio" element={<MacStudio />} />
           <Route path="/MacbookAir" element={<MacbookAir />} />
@@ -289,11 +281,11 @@ function App() {
           <Route path="/Harman" element={<Harman />} />
           <Route path="/Jbl" element={<Jbl />} />
           <Route path="/AppleTV4k" element={<AppleTV4k />} />
-          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} />
+          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} /> */}
           <Route path="/LoNuevo" element={<LoNuevo />} />
           <Route path="/cart" element={<Cart />} />
 
-          <Route path="/detalle-producto/iphoneAll" element={<Navigate to="/iphoneAll" replace />} />
+        {/*   <Route path="/detalle-producto/iphoneAll" element={<Navigate to="/iphoneAll" replace />} />
           <Route path="/detalle-producto/iphone15" element={<Navigate to="/iphone15" replace />} />
           <Route path="/detalle-producto/iphone15pro" element={<Navigate to="/iphone15pro" replace />} />
           <Route path="/detalle-producto/iphone14" element={<Navigate to="/iphone14" replace />} />
@@ -346,7 +338,7 @@ function App() {
           <Route path="/detalle-producto/AppleTV4k" element={<Navigate to="/AppleTV4k" replace />} />
           <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />
           <Route path="/detalle-producto/LoNuevo" element={<Navigate to="/LoNuevo" replace />} />
-          <Route path="/detalle-producto/:id" element={<DetalleProducto />} />
+          <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </CartProvider>

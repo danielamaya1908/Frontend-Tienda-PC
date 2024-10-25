@@ -4,7 +4,7 @@ import Navbar from '../../NavBar/NavBar';
 import Footer from '../../Footer/Footer';
 import { Link } from 'react-router-dom';
 
-const Iphone11 = () => {
+const Poco = () => {
   const [iphoneProducts, setIphoneProducts] = useState([]);
   const [productImages, setProductImages] = useState({});
 
@@ -77,4 +77,4 @@ const Iphone11 = () => {
   );
 };
 
-export default Iphone11;
+export default Poco;

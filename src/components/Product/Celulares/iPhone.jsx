@@ -4,19 +4,17 @@ import Navbar from '../../NavBar/NavBar';
 import Footer from '../../Footer/Footer';
 import { Link } from 'react-router-dom';
 
-const Iphone14pro = () => {
+const Iphone = () => {
   const [iphoneProducts, setIphoneProducts] = useState([]);
   const [productImages, setProductImages] = useState({});
 
   useEffect(() => {
     const fetchIphoneProducts = async () => {
       try {
-        const responses = await Promise.all([
-          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Smartphones/subcategory/iPhone/name/iPhone%2014%20Pro'),
-          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Smartphones/subcategory/iPhone/name/iPhone%2014%20Pro%20Max')
-        ]);
-        const products = responses.flatMap(response => response.data);
+        const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Smartphones/subcategory/iPhone/name/iPhone%2011');
+        const products = response.data;
         setIphoneProducts(products);
+
         products.forEach(async (product) => {
           try {
             const imageResponse = await axios.get(`https://backend-tienda-mac-production.up.railway.app/products/${product.id}/images`);
@@ -31,6 +29,7 @@ const Iphone14pro = () => {
         console.error('Error fetching iPhone products:', error);
       }
     };
+
     fetchIphoneProducts();
   }, []);
 
@@ -42,11 +41,11 @@ const Iphone14pro = () => {
     <div className="iphone-products">
       <Navbar />
       <div className="container py-5">
-        <h1 className="text-center mb-4 fs-4" style={{ color: 'black' }}>iPhone 14 Pro</h1>
+        <h1 className="text-center mb-4 fs-4" style={{ color: 'black' }}>iPhone 11</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {iphoneProducts.map((product) => (
             <div className="col" key={product.id}>
-              <a href={`/detalle-producto/${product.id}`} className="text-decoration-none">
+              <Link to={`/detalle-producto/${product.id}`} className="text-decoration-none">
                 <div className="card h-100 small-card">
                   <div className="card-img-top d-flex justify-content-center align-items-center" style={{ height: '250px', padding: '10px' }}>
                     {productImages[product.id] && productImages[product.id][0] && (
@@ -68,7 +67,7 @@ const Iphone14pro = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -78,4 +77,4 @@ const Iphone14pro = () => {
   );
 };
 
-export default Iphone14pro;
+export default Iphone;
