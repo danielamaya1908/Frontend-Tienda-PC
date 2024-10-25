@@ -238,7 +238,7 @@ const Navbar = () => {
                 <NavDropdown.Item href="iphone12">Ofertas</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown
-                title="Smartwatch"
+                title="SmartWatch"
                 id="ipads-dropdown"
                 className="no-caret"
                 show={activeDropdown === 'ipads'}
