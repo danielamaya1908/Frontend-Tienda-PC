@@ -233,14 +233,14 @@ function App() {
           <Route path="/soportetecnicocliente/:id" element={<SoporteTecnicoClienteDetalle />} />
           <Route path="/warranty" element={<AppleWarranty />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/OfertasCel" element={<OfertasCel />} />
+        {/*   <Route path="/OfertasCel" element={<OfertasCel />} />
           <Route path="/Poco" element={<Poco />} />
           <Route path="/Xiaomi" element={<Xiaomi />} />
           <Route path="/Samsung" element={<Samsung />} />
           <Route path="/AccesoriosParaCelulares" element={<AccesoriosParaCelulares />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
-          <Route path="/Ofertas" element={<Ofertas />} />
+          <Route path="/Ofertas" element={<Ofertas />} /> */}
          {/*  <Route path="/ipadAll" element={<IpadAll />} />
           <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
