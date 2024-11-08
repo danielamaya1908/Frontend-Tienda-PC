@@ -3,7 +3,6 @@ import axios from 'axios';
 import Navbar from '../../NavBar/NavBar';
 import Footer from '../../Footer/Footer';
 import { Link } from 'react-router-dom';
-import './IphoneProducts.css';
 
 const Ofertas = () => {
   const [iphoneProducts, setIphoneProducts] = useState([]);
