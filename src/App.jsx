@@ -17,13 +17,13 @@ import Color from './components/Color/Color';
 import Condition from './components/Condition/Condition';
 import Capacity from './components/Capacity/Capacity';
 import ProductDetail from './components/Product/ProductDetail';
-/* import AccesoriosParaCelulares from './components/Product/Celulares/AccesoriosParaCelulares';
-import OfertasCel from './components/Product/Celulares/OfertasCel';
-import Poco from './components/Product/Celulares/';
-import Xiaomi from './components/Product/Celulares/Xiaomi';
-import Samsung from './components/Product/Celulares/Samsung';
-import Iphone from './components/Product/Celulares/iPhone';
-import Usados from './components/Product/Celulares/Usados.jsx'; */
+import AccesoriosParaCelulares from './components/Product/Celulares/AccesoriosParaCelulares.jsx';
+import OfertasCel from './components/Product/Celulares/Ofertas.jsx';
+import Poco from './components/Product/Celulares/Poco.jsx';
+import Xiaomi from './components/Product/Celulares/Xiaomi.jsx';
+import Samsung from './components/Product/Celulares/Samsung.jsx';
+import Iphone from './components/Product/Celulares/iPhone.jsx';
+import Usados from './components/Product/Celulares/Usados.jsx';
 /* import IpadAll from './components/Product/iPad/iPadAll';
 import Ipad from './components/Product/iPad/iPad';
 import Ipadmini from './components/Product/iPad/iPadMini';
@@ -241,7 +241,7 @@ function App() {
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
           <Route path="/Ofertas" element={<Ofertas />} />
-          <Route path="/ipadAll" element={<IpadAll />} />
+         {/*  <Route path="/ipadAll" element={<IpadAll />} />
           <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
           <Route path="/ipad" element={<Ipad />} />
@@ -249,9 +249,9 @@ function App() {
           <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
-          <Route path="/MacbookPro" element={<MacbookPro />} />
+          <Route path="/MacbookPro" element={<MacbookPro />} /> */}
           {/* <Route path="/StudioDisplaysl" element={<StudioDisplaysl />} /> */}
-          <Route path="/imac" element={<Imac />} />
+         {/*  <Route path="/imac" element={<Imac />} />
           <Route path="/MacUsed" element={<MacUsed />} />
           <Route path="/MacStudio" element={<MacStudio />} />
           <Route path="/MacbookAir" element={<MacbookAir />} />
@@ -281,7 +281,7 @@ function App() {
           <Route path="/Harman" element={<Harman />} />
           <Route path="/Jbl" element={<Jbl />} />
           <Route path="/AppleTV4k" element={<AppleTV4k />} />
-          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} />
+          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} /> */}
           <Route path="/LoNuevo" element={<LoNuevo />} />
           <Route path="/cart" element={<Cart />} />
 
@@ -292,7 +292,7 @@ function App() {
           <Route path="/detalle-producto/iphone14pro" element={<Navigate to="/iphone14pro" replace />} />
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
-          <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
+          {/* <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
           <Route path="/detalle-producto/iphone11" element={<Navigate to="/iphone11" replace />} />
           <Route path="/detalle-producto/iphoneSE" element={<Navigate to="/iphoneSE" replace />} />
           <Route path="/detalle-producto/iPhoneUsed" element={<Navigate to="/iPhoneUsed" replace />} />
@@ -338,7 +338,7 @@ function App() {
           <Route path="/detalle-producto/AppleTV4k" element={<Navigate to="/AppleTV4k" replace />} />
           <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />
           <Route path="/detalle-producto/LoNuevo" element={<Navigate to="/LoNuevo" replace />} />
-          <Route path="/detalle-producto/:id" element={<DetalleProducto />} />
+          <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </CartProvider>
