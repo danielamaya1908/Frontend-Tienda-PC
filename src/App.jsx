@@ -233,15 +233,15 @@ function App() {
           <Route path="/soportetecnicocliente/:id" element={<SoporteTecnicoClienteDetalle />} />
           <Route path="/warranty" element={<AppleWarranty />} />
           <Route path="/faq" element={<FAQ />} />
-        {/*   <Route path="/OfertasCel" element={<OfertasCel />} />
+          <Route path="/OfertasCel" element={<OfertasCel />} />
           <Route path="/Poco" element={<Poco />} />
           <Route path="/Xiaomi" element={<Xiaomi />} />
           <Route path="/Samsung" element={<Samsung />} />
           <Route path="/AccesoriosParaCelulares" element={<AccesoriosParaCelulares />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
-          <Route path="/Ofertas" element={<Ofertas />} /> */}
-         {/*  <Route path="/ipadAll" element={<IpadAll />} />
+          <Route path="/Ofertas" element={<Ofertas />} />
+          <Route path="/ipadAll" element={<IpadAll />} />
           <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
           <Route path="/ipad" element={<Ipad />} />
@@ -249,9 +249,9 @@ function App() {
           <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
-          <Route path="/MacbookPro" element={<MacbookPro />} /> */}
+          <Route path="/MacbookPro" element={<MacbookPro />} />
           {/* <Route path="/StudioDisplaysl" element={<StudioDisplaysl />} /> */}
-         {/*  <Route path="/imac" element={<Imac />} />
+          <Route path="/imac" element={<Imac />} />
           <Route path="/MacUsed" element={<MacUsed />} />
           <Route path="/MacStudio" element={<MacStudio />} />
           <Route path="/MacbookAir" element={<MacbookAir />} />
@@ -281,11 +281,11 @@ function App() {
           <Route path="/Harman" element={<Harman />} />
           <Route path="/Jbl" element={<Jbl />} />
           <Route path="/AppleTV4k" element={<AppleTV4k />} />
-          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} /> */}
+          <Route path="/AppleTVyHogar" element={<AppleTVyHogar />} />
           <Route path="/LoNuevo" element={<LoNuevo />} />
           <Route path="/cart" element={<Cart />} />
 
-        {/*   <Route path="/detalle-producto/iphoneAll" element={<Navigate to="/iphoneAll" replace />} />
+          <Route path="/detalle-producto/iphoneAll" element={<Navigate to="/iphoneAll" replace />} />
           <Route path="/detalle-producto/iphone15" element={<Navigate to="/iphone15" replace />} />
           <Route path="/detalle-producto/iphone15pro" element={<Navigate to="/iphone15pro" replace />} />
           <Route path="/detalle-producto/iphone14" element={<Navigate to="/iphone14" replace />} />
@@ -338,7 +338,7 @@ function App() {
           <Route path="/detalle-producto/AppleTV4k" element={<Navigate to="/AppleTV4k" replace />} />
           <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />
           <Route path="/detalle-producto/LoNuevo" element={<Navigate to="/LoNuevo" replace />} />
-          <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> */}
+          <Route path="/detalle-producto/:id" element={<DetalleProducto />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </CartProvider>
