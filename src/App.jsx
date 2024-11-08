@@ -240,7 +240,6 @@ function App() {
           <Route path="/AccesoriosParaCelulares" element={<AccesoriosParaCelulares />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
-          <Route path="/Ofertas" element={<Ofertas />} />
          {/*  <Route path="/ipadAll" element={<IpadAll />} />
           <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
