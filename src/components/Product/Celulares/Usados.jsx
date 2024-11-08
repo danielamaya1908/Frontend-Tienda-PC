@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Navbar from '../../NavBar/NavBar'; // Asegúrate de que la ruta sea correcta
 import Footer from '../../Footer/Footer'; 
-import './IphoneProducts.css';
+
 
 const Usados = () => {
   const [iphoneProducts, setIphoneProducts] = useState([]);
