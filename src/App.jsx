@@ -284,7 +284,7 @@ function App() {
           <Route path="/LoNuevo" element={<LoNuevo />} />
           <Route path="/cart" element={<Cart />} />
 
-          <Route path="/detalle-producto/iphoneAll" element={<Navigate to="/iphoneAll" replace />} />
+          <Route path="/detalle-producto/iphone" element={<Navigate to="/iphone" replace />} />
           <Route path="/detalle-producto/iphone15" element={<Navigate to="/iphone15" replace />} />
           <Route path="/detalle-producto/iphone15pro" element={<Navigate to="/iphone15pro" replace />} />
           <Route path="/detalle-producto/iphone14" element={<Navigate to="/iphone14" replace />} />
