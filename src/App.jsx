@@ -41,8 +41,8 @@ import SoporteTecnicoClienteDetalle from './components/SoporteTecnico/SoporteTec
 import SoporteTecnicoDetalle from './components/SoporteTecnico/SoporteTecnicoDetalle';
 import EquiposEscritorio from './components/Product/Computadores/EquiposEscritorio.jsx'; 
 import AccesoriosComputadores from './components/Product/Computadores/AccesoriosComputadores.jsx';
-/*import Imac from './components/Product/Mac/iMac';
-import MacUsed from './components/Product/Mac/MacUsed';
+import AccesoriosParaTablets from './components/Product/Tablets/AccesoriosParaTablets.jsx';
+/*import MacUsed from './components/Product/Mac/MacUsed';
 import Airpods from './components/Product/AirPods/Airpods';
 import AirpodsPro from './components/Product/AirPods/AirpodsPro';
 import AirpodsMax from './components/Product/AirPods/AirpodsMax';
@@ -244,8 +244,8 @@ function App() {
          <Route path="/portatiles" element={<Portatiles />} />
          <Route path="/EquiposEscritorio" element={<EquiposEscritorio />} />
           <Route path="/AccesoriosComputadores" element={<AccesoriosComputadores />} />
-          {/*  <Route path="/ipadAir" element={<IpadAir />} />
-          <Route path="/IpadUsed" element={<IpadUsed />} />
+          <Route path="/AccesoriosParaTablets" element={<AccesoriosParaTablets />} />
+          {/*  <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
           <Route path="/MacbookPro" element={<MacbookPro />} /> */}
@@ -287,7 +287,7 @@ function App() {
           <Route path="/detalle-producto/iphone" element={<Navigate to="/iphone" replace />} />
           <Route path="/detalle-producto/AccesoriosComputadores" element={<Navigate to="/AccesoriosComputadores" replace />} />
           <Route path="/detalle-producto/EquiposEscritorio" element={<Navigate to="/EquiposEscritorio" replace />} />
-          <Route path="/detalle-producto/iphone14" element={<Navigate to="/iphone14" replace />} />
+          <Route path="/detalle-producto/AccesoriosParaTablets" element={<Navigate to="/AccesoriosParaTablets" replace />} />
           <Route path="/detalle-producto/iphone14pro" element={<Navigate to="/iphone14pro" replace />} />
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
