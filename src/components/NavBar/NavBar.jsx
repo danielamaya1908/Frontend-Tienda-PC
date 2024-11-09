@@ -246,11 +246,11 @@ const Navbar = () => {
                 onMouseEnter={() => handleDropdownMouseEnter('ipads')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <NavDropdown.Item href="ipadAll">Todo los Smartwatch</NavDropdown.Item>
-                <NavDropdown.Item href="ipadPro">Garmin</NavDropdown.Item>
+                <NavDropdown.Item href="ipadAll">Todos los Smartwatch</NavDropdown.Item>
+                <NavDropdown.Item href="ipadPro">Gaming</NavDropdown.Item>
                 <NavDropdown.Item href="ipadAir">Samsung</NavDropdown.Item>
                 <NavDropdown.Item href="ipad">Xiaomi</NavDropdown.Item>
-                <NavDropdown.Item href="ipadMini">Apple</NavDropdown.Item>
+                <NavDropdown.Item href="AppleWatch">Apple</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParaiPad">Accesorios parar Smartwatch</NavDropdown.Item>
                 <NavDropdown.Item href="ipadUsed">Usados</NavDropdown.Item>
                 <NavDropdown.Item href="ipadUsed">Ofertas</NavDropdown.Item>

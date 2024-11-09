@@ -54,7 +54,7 @@ import AppleWatchUltra from './components/Product/AppleWatch/AppleWatchUltra';
 import AppleWatchSeries7 from './components/Product/AppleWatch/AppleWatchSeries7';
 import AppleWatchSeries8 from './components/Product/AppleWatch/AppleWatchSeries8';
 import AppleWatchSeries9 from './components/Product/AppleWatch/AppleWatchSeries9';
-import AppleWatchAll from './components/Product/AppleWatch/AppleWatchAll';
+
 import AppleWatchSE from './components/Product/AppleWatch/AppleWatchSE';
 import AppleWatchUsed from './components/Product/AppleWatch/AppleWatchUsed';
 import AccesoriosParaTVyHogar from './components/Product/Accesorios/AccesoriosParaTVyHogar';
@@ -70,6 +70,7 @@ import Bose from './components/Product/Sonido/Bose';
 import Harman from './components/Product/Sonido/Harman';
 import AppleTV4k from './components/Product/AppleTV/AppleTV4k';
 import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar'; */
+import AppleWatch from './components/Product/SmartWatch/AppleWatch';
 import DetalleProducto from './components/Product/DetalleProducto';
 import LoNuevo from './components/SubNavbar/LoNuevo';
 import Cart from './components/Cart/Cart';
@@ -245,6 +246,7 @@ function App() {
          <Route path="/EquiposEscritorio" element={<EquiposEscritorio />} />
           <Route path="/AccesoriosComputadores" element={<AccesoriosComputadores />} />
           <Route path="/AccesoriosParaTablets" element={<AccesoriosParaTablets />} />
+          <Route path="/AppleWatch" element={<AppleWatch />} />
           {/*  <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
@@ -265,7 +267,7 @@ function App() {
           <Route path="/AppleWatchSeries7" element={<AppleWatchSeries7 />} />
           <Route path="/AppleWatchSeries8" element={<AppleWatchSeries8 />} />
           <Route path="/AppleWatchSeries9" element={<AppleWatchSeries9 />} />
-          <Route path="/AppleWatchAll" element={<AppleWatchAll />} />
+          
           <Route path="/AppleWatchUsed" element={<AppleWatchUsed />} />
           <Route path="/AppleWatchSE" element={<AppleWatchSE />} />
           <Route path="/AccesoriosParaTVyHogar" element={<AccesoriosParaTVyHogar />} />
@@ -291,6 +293,7 @@ function App() {
           <Route path="/detalle-producto/iphone14pro" element={<Navigate to="/iphone14pro" replace />} />
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
+          <Route path="/detalle-producto/AppleWatch" element={<Navigate to="/AppleWatch" replace />} />
         {/*   <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
           <Route path="/detalle-producto/iphone11" element={<Navigate to="/iphone11" replace />} />
           <Route path="/detalle-producto/iphoneSE" element={<Navigate to="/iphoneSE" replace />} />
@@ -322,7 +325,7 @@ function App() {
           <Route path="/detalle-producto/AppleWatchSeries8" element={<Navigate to="/AppleWatchSeries8" replace />} />
           <Route path="/detalle-producto/AppleWatchSeries9" element={<Navigate to="/AppleWatchSeries9" replace />} />
           <Route path="/detalle-producto/AppleWatchUsed" element={<Navigate to="/AppleWatchUsed" replace />} />
-          <Route path="/detalle-producto/AppleWatchAll" element={<Navigate to="/AppleWatchAll" replace />} />
+          
           <Route path="/detalle-producto/AccesoriosParaTVyHogar" element={<Navigate to="/AccesoriosParaTVyHogar" replace />} />
           <Route path="/detalle-producto/AccesoriosAll" element={<Navigate to="/AccesoriosAll" replace />} />
           <Route path="/detalle-producto/AccesoriosParaiPhone" element={<Navigate to="/AccesoriosParaiPhone" replace />} />
