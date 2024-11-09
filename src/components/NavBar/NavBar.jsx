@@ -195,9 +195,10 @@ const Navbar = () => {
                 onMouseEnter={() => handleDropdownMouseEnter('computadores')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
+                <NavDropdown.Item href="/TodosComputadores">Todos los Computadores</NavDropdown.Item>
                 <NavDropdown.Item href="computadoresAll">Equipos de Escritorio</NavDropdown.Item>
                 <NavDropdown.Item href="portatiles">Portátiles</NavDropdown.Item>
-                <NavDropdown.Item href="icomputadores">Gamer</NavDropdown.Item>
+                <NavDropdown.Item href="">Gamer</NavDropdown.Item>
                 <NavDropdown.Item href="computadoresMini">Monitores</NavDropdown.Item>
                 <NavDropdown.Item href="computadoresStudio">Usados</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParacomputadores">Accesorios</NavDropdown.Item>
@@ -230,7 +231,7 @@ const Navbar = () => {
               >
                 <NavDropdown.Item href="ipad">Apple</NavDropdown.Item>
                 <NavDropdown.Item href="iphone15pro">Samsung</NavDropdown.Item>
-                <NavDropdown.Item href="iphone15">Tablets</NavDropdown.Item>
+                <NavDropdown.Item href="TodaslasTablets">Todas las Tablets</NavDropdown.Item>
                 <NavDropdown.Item href="iphone14pro">Xiaomi</NavDropdown.Item>
                 <NavDropdown.Item href="">Lenovo</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParaTablets">Accesorios para Tablets</NavDropdown.Item>
