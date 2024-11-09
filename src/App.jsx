@@ -39,9 +39,9 @@ import SoporteTecnico from './components/SoporteTecnico/SoporteTecnico';
 import SoporteTecnicoCliente from './components/SoporteTecnico/SoporteTecnicoCliente';
 import SoporteTecnicoClienteDetalle from './components/SoporteTecnico/SoporteTecnicoClienteDetalle';
 import SoporteTecnicoDetalle from './components/SoporteTecnico/SoporteTecnicoDetalle';
-/* import MacbookPro from './components/Product/Mac/MacbookPro'; */
-/* import MacbookAir from './components/Product/Mac/MacbookAir';
-import Imac from './components/Product/Mac/iMac';
+import EquiposEscritorio from './components/Product/Computadores/EquiposEscritorio.jsx'; 
+import AccesoriosComputadores from './components/Product/Computadores/AccesoriosComputadores.jsx';
+/*import Imac from './components/Product/Mac/iMac';
 import MacUsed from './components/Product/Mac/MacUsed';
 import Airpods from './components/Product/AirPods/Airpods';
 import AirpodsPro from './components/Product/AirPods/AirpodsPro';
@@ -242,9 +242,9 @@ function App() {
           <Route path="/Usados" element={<Usados />} />
           <Route path="/ipad" element={<Ipad />} />
          <Route path="/portatiles" element={<Portatiles />} />
-         {/*   <Route path="/ipadMini" element={<Ipadmini />} />
-          <Route path="/ipad" element={<Ipad />} />
-          <Route path="/ipadAir" element={<IpadAir />} />
+         <Route path="/EquiposEscritorio" element={<EquiposEscritorio />} />
+          <Route path="/AccesoriosComputadores" element={<AccesoriosComputadores />} />
+          {/*  <Route path="/ipadAir" element={<IpadAir />} />
           <Route path="/IpadUsed" element={<IpadUsed />} />
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
@@ -285,8 +285,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
 
           <Route path="/detalle-producto/iphone" element={<Navigate to="/iphone" replace />} />
-          <Route path="/detalle-producto/iphone15" element={<Navigate to="/iphone15" replace />} />
-          <Route path="/detalle-producto/iphone15pro" element={<Navigate to="/iphone15pro" replace />} />
+          <Route path="/detalle-producto/AccesoriosComputadores" element={<Navigate to="/AccesoriosComputadores" replace />} />
+          <Route path="/detalle-producto/EquiposEscritorio" element={<Navigate to="/EquiposEscritorio" replace />} />
           <Route path="/detalle-producto/iphone14" element={<Navigate to="/iphone14" replace />} />
           <Route path="/detalle-producto/iphone14pro" element={<Navigate to="/iphone14pro" replace />} />
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
@@ -335,9 +335,9 @@ function App() {
           <Route path="/detalle-producto/Harman" element={<Navigate to="/Harman" replace />} />
           <Route path="/detalle-producto/Bose" element={<Navigate to="/Bose" replace />} />
           <Route path="/detalle-producto/AppleTV4k" element={<Navigate to="/AppleTV4k" replace />} />
-          <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />
+          <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />*/}
           <Route path="/detalle-producto/LoNuevo" element={<Navigate to="/LoNuevo" replace />} />
-          <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> */}
+          <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </CartProvider>
