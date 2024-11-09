@@ -204,14 +204,14 @@ const Navbar = () => {
               </NavDropdown>
                <NavDropdown
                 title="Celulares"
-                id="appletv-dropdown"
+                id="celulares-dropdown"
                 className="no-caret"
-                show={activeDropdown === 'appletv'}
-                onClick={() => toggleDropdown('appletv')}
-                onMouseEnter={() => handleDropdownMouseEnter('appletv')}
+                show={activeDropdown === 'celulares'}
+                onClick={() => toggleDropdown('celulares')}
+                onMouseEnter={() => handleDropdownMouseEnter('celulares')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <NavDropdown.Item href="AppleTVyHogar">iPhone</NavDropdown.Item>
+                <NavDropdown.Item href="iphone">iPhone</NavDropdown.Item>
                 <NavDropdown.Item href="AppleTV4k">Samsung</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParaTVyHogar">Xiaomi</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParaTVyHogar">Poco</NavDropdown.Item>
