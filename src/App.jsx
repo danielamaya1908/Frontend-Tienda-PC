@@ -68,8 +68,9 @@ import SonidoAll from './components/Product/Sonido/SonidoAll';
 import Jbl from './components/Product/Sonido/Jbl';
 import Bose from './components/Product/Sonido/Bose';
 import Harman from './components/Product/Sonido/Harman';
-import AppleTV4k from './components/Product/AppleTV/AppleTV4k';
+
 import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar'; */
+import TodasTablets from './components/Product/Tablets/TodasTablets.jsx';
 import AppleWatch from './components/Product/SmartWatch/AppleWatch';
 import DetalleProducto from './components/Product/DetalleProducto';
 import LoNuevo from './components/SubNavbar/LoNuevo';
@@ -247,7 +248,8 @@ function App() {
           <Route path="/AccesoriosComputadores" element={<AccesoriosComputadores />} />
           <Route path="/AccesoriosParaTablets" element={<AccesoriosParaTablets />} />
           <Route path="/AppleWatch" element={<AppleWatch />} />
-          {/*  <Route path="/IpadUsed" element={<IpadUsed />} />
+          <Route path="/TodasTablets" element={<TodasTablets />} />
+          {/*  
           <Route path="/macAll" element={<MacAll />} />
           <Route path="/MacMini" element={<MacMini />} />
           <Route path="/MacbookPro" element={<MacbookPro />} /> */}
@@ -294,6 +296,7 @@ function App() {
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
           <Route path="/detalle-producto/AppleWatch" element={<Navigate to="/AppleWatch" replace />} />
+          <Route path="/detalle-producto/TodasTablets" element={<Navigate to="/TodasTablets" replace />} />
         {/*   <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
           <Route path="/detalle-producto/iphone11" element={<Navigate to="/iphone11" replace />} />
           <Route path="/detalle-producto/iphoneSE" element={<Navigate to="/iphoneSE" replace />} />
@@ -301,7 +304,7 @@ function App() {
           <Route path="/detalle-producto/ipad" element={<Navigate to="/ipad" replace />} />
          {/*  <Route path="/detalle-producto/ipadPro" element={<Navigate to="/ipadPro" replace />} />
           <Route path="/detalle-producto/ipadMini" element={<Navigate to="/ipadMini" replace />} />
-          <Route path="/detalle-producto/ipad" element={<Navigate to="/ipad" replace />} />
+          
           <Route path="/detalle-producto/ipadAir" element={<Navigate to="/ipadAir" replace />} />
           <Route path="/detalle-producto/IpadUsed" element={<Navigate to="/IpadUsed" replace />} />
           <Route path="/detalle-producto/macAll" element={<Navigate to="/macAll" replace />} />
