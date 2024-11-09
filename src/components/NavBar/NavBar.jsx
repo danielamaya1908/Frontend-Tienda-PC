@@ -231,7 +231,7 @@ const Navbar = () => {
               >
                 <NavDropdown.Item href="ipad">Apple</NavDropdown.Item>
                 <NavDropdown.Item href="iphone15pro">Samsung</NavDropdown.Item>
-                <NavDropdown.Item href="TodaslasTablets">Todas las Tablets</NavDropdown.Item>
+                <NavDropdown.Item href="/TodaslasTablets">Todas las Tablets</NavDropdown.Item>
                 <NavDropdown.Item href="iphone14pro">Xiaomi</NavDropdown.Item>
                 <NavDropdown.Item href="">Lenovo</NavDropdown.Item>
                 <NavDropdown.Item href="AccesoriosParaTablets">Accesorios para Tablets</NavDropdown.Item>

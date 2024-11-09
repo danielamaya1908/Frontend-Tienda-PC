@@ -66,11 +66,12 @@ import AccesoriosParaiPad from './components/Product/Accesorios/AccesoriosParaiP
 import AccesoriosParaiPhone from './components/Product/Accesorios/AccesoriosParaiPhone';
 import SonidoAll from './components/Product/Sonido/SonidoAll';
 import Jbl from './components/Product/Sonido/Jbl';
-import Bose from './components/Product/Sonido/Bose';
-import Harman from './components/Product/Sonido/Harman';
+
 
 import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar'; */
 import TodasTablets from './components/Product/Tablets/TodasTablets.jsx';
+import TodosSmartwatch from './components/Product/SmartWatch/TodosSmartwatch.jsx';
+import TodosComputadores from './components/Product/Computadores/TodosComputadores';
 import AppleWatch from './components/Product/SmartWatch/AppleWatch';
 import DetalleProducto from './components/Product/DetalleProducto';
 import LoNuevo from './components/SubNavbar/LoNuevo';
@@ -249,10 +250,9 @@ function App() {
           <Route path="/AccesoriosParaTablets" element={<AccesoriosParaTablets />} />
           <Route path="/AppleWatch" element={<AppleWatch />} />
           <Route path="/TodasTablets" element={<TodasTablets />} />
-          {/*  
-          <Route path="/macAll" element={<MacAll />} />
-          <Route path="/MacMini" element={<MacMini />} />
-          <Route path="/MacbookPro" element={<MacbookPro />} /> */}
+          <Route path="/TodosSmartwatch" element={<TodosSmartwatch />} />
+          <Route path="/TodosComputadores" element={<TodosComputadores />} />
+        
           {/* <Route path="/StudioDisplaysl" element={<StudioDisplaysl />} /> */}
          {/*  <Route path="/imac" element={<Imac />} />
           <Route path="/MacUsed" element={<MacUsed />} />
@@ -297,6 +297,8 @@ function App() {
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
           <Route path="/detalle-producto/AppleWatch" element={<Navigate to="/AppleWatch" replace />} />
           <Route path="/detalle-producto/TodasTablets" element={<Navigate to="/TodasTablets" replace />} />
+          <Route path="/detalle-producto/TodosComputadores" element={<Navigate to="/TodosComputadores" replace />} />
+          <Route path="/detalle-producto/TodosSmartwatch" element={<Navigate to="/TodosSmartwatch" replace />} />
         {/*   <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
           <Route path="/detalle-producto/iphone11" element={<Navigate to="/iphone11" replace />} />
           <Route path="/detalle-producto/iphoneSE" element={<Navigate to="/iphoneSE" replace />} />
@@ -339,8 +341,7 @@ function App() {
           <Route path="/detalle-producto/SonidoAll" element={<Navigate to="/SonidoAll" replace />} />
           <Route path="/detalle-producto/Jbl" element={<Navigate to="/Jbl" replace />} />
           <Route path="/detalle-producto/Harman" element={<Navigate to="/Harman" replace />} />
-          <Route path="/detalle-producto/Bose" element={<Navigate to="/Bose" replace />} />
-          <Route path="/detalle-producto/AppleTV4k" element={<Navigate to="/AppleTV4k" replace />} />
+          
           <Route path="/detalle-producto/AppleTVyHogar" element={<Navigate to="/AppleTVyHogar" replace />} />*/}
           <Route path="/detalle-producto/LoNuevo" element={<Navigate to="/LoNuevo" replace />} />
           <Route path="/detalle-producto/:id" element={<DetalleProducto />} /> 
