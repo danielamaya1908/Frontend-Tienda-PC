@@ -331,12 +331,12 @@ const Navbar = () => {
                 onMouseEnter={() => handleDropdownMouseEnter('applewatch')}
                 onMouseLeave={handleDropdownMouseLeave}
               >
-                <NavDropdown.Item href="AppleWatchAll">Todas las Impresoras</NavDropdown.Item>
-                <NavDropdown.Item href="AppleWatchSeries8">Impresora Laser</NavDropdown.Item>
-                <NavDropdown.Item href="AppleWatchSeries7">Impresora Tinta Continua</NavDropdown.Item>
-                <NavDropdown.Item href="AppleWatchSE">Impresora POS</NavDropdown.Item>
-                <NavDropdown.Item href="AccesoriosParaWatch">Usados</NavDropdown.Item>
-                <NavDropdown.Item href="AppleWatchUsed">Ofertas</NavDropdown.Item>
+                <NavDropdown.Item href="">Todas las Impresoras</NavDropdown.Item>
+                <NavDropdown.Item href="">Impresora Laser</NavDropdown.Item>
+                <NavDropdown.Item href="">Impresora Tinta Continua</NavDropdown.Item>
+                <NavDropdown.Item href="">Impresora POS</NavDropdown.Item>
+                <NavDropdown.Item href="">Usados</NavDropdown.Item>
+                <NavDropdown.Item href="">Ofertas</NavDropdown.Item>
 
               </NavDropdown>
               <NavDropdown
