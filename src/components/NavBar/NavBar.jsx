@@ -196,7 +196,7 @@ const Navbar = () => {
                 onMouseLeave={handleDropdownMouseLeave}
               >
                 <NavDropdown.Item href="computadoresAll">Equipos de Escritorio</NavDropdown.Item>
-                <NavDropdown.Item href="computadoresbookAir">Portátiles</NavDropdown.Item>
+                <NavDropdown.Item href="portatiles">Portátiles</NavDropdown.Item>
                 <NavDropdown.Item href="icomputadores">Gamer</NavDropdown.Item>
                 <NavDropdown.Item href="computadoresMini">Monitores</NavDropdown.Item>
                 <NavDropdown.Item href="computadoresStudio">Usados</NavDropdown.Item>

@@ -1,20 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Navbar from '../../NavBar/NavBar'; // Asegúrate de que la ruta sea correcta
+import Navbar from '../../NavBar/NavBar';
+import { Link } from 'react-router-dom';
 import Footer from '../../Footer/Footer'; 
-import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
-const iMac = () => {
+const Portatiles = () => {
   const [macProducts, setMacProducts] = useState([]);
   const [productImages, setProductImages] = useState({});
 
   useEffect(() => {
     const fetchMacProducts = async () => {
       try {
-        const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/iMac');
-        const products = response.data;
+        const responses = await Promise.all([
+          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/MacBook'),
+          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/Mac%20studio'),
+          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/Mac%20mini'),
+          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/iMac')
+        ]);
+        const products = responses.flatMap(response => response.data);
         setMacProducts(products);
-
+        
         products.forEach(async (product) => {
           try {
             const imageResponse = await axios.get(`https://backend-tienda-mac-production.up.railway.app/products/${product.id}/images`);
@@ -41,7 +46,7 @@ const iMac = () => {
     <div className="mac-products">
       <Navbar />
       <div className="container py-5">
-        <h1 className="text-center mb-4 fs-4">iMac</h1>
+        <h1 className="text-center mb-4 fs-4">Portátiles</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {macProducts.map((product) => (
             <div className="col" key={product.id}>
@@ -79,4 +84,4 @@ const iMac = () => {
   );  
 };
 
-export default iMac;
+export default Portatiles;

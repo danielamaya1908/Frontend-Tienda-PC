@@ -25,8 +25,8 @@ import Samsung from './components/Product/Celulares/Samsung.jsx';
 import Iphone from './components/Product/Celulares/iPhone.jsx';
 import Usados from './components/Product/Celulares/Usados.jsx';
 import Ipad from './components/Product/Tablets/iPad.jsx';
-/*import Ipad from './components/Product/iPad/iPad';
-import Ipadmini from './components/Product/iPad/iPadMini';
+import Portatiles from './components/Product/Computadores/Portatiles.jsx';
+/*import Ipadmini from './components/Product/iPad/iPadMini';
 import IpadAir from './components/Product/iPad/iPadAir';
 import IpadPro from './components/Product/iPad/iPadPro';
 import IpadUsed from './components/Product/iPad/iPadUsed';
@@ -241,8 +241,8 @@ function App() {
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
           <Route path="/ipad" element={<Ipad />} />
-         {/*  <Route path="/ipadPro" element={<IpadPro />} />
-          <Route path="/ipadMini" element={<Ipadmini />} />
+         <Route path="/portatiles" element={<Portatiles />} />
+         {/*   <Route path="/ipadMini" element={<Ipadmini />} />
           <Route path="/ipad" element={<Ipad />} />
           <Route path="/ipadAir" element={<IpadAir />} />
           <Route path="/IpadUsed" element={<IpadUsed />} />
