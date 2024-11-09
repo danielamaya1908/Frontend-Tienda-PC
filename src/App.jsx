@@ -24,8 +24,8 @@ import Xiaomi from './components/Product/Celulares/Xiaomi.jsx';
 import Samsung from './components/Product/Celulares/Samsung.jsx';
 import Iphone from './components/Product/Celulares/iPhone.jsx';
 import Usados from './components/Product/Celulares/Usados.jsx';
-/* import IpadAll from './components/Product/iPad/iPadAll';
-import Ipad from './components/Product/iPad/iPad';
+import Ipad from './components/Product/Tablets/iPad.jsx';
+/*import Ipad from './components/Product/iPad/iPad';
 import Ipadmini from './components/Product/iPad/iPadMini';
 import IpadAir from './components/Product/iPad/iPadAir';
 import IpadPro from './components/Product/iPad/iPadPro';
@@ -240,8 +240,8 @@ function App() {
           <Route path="/AccesoriosParaCelulares" element={<AccesoriosParaCelulares />} />
           <Route path="/iphone" element={<Iphone />} />
           <Route path="/Usados" element={<Usados />} />
-         {/*  <Route path="/ipadAll" element={<IpadAll />} />
-          <Route path="/ipadPro" element={<IpadPro />} />
+          <Route path="/ipad" element={<Ipad />} />
+         {/*  <Route path="/ipadPro" element={<IpadPro />} />
           <Route path="/ipadMini" element={<Ipadmini />} />
           <Route path="/ipad" element={<Ipad />} />
           <Route path="/ipadAir" element={<IpadAir />} />
@@ -291,12 +291,12 @@ function App() {
           <Route path="/detalle-producto/iphone14pro" element={<Navigate to="/iphone14pro" replace />} />
           <Route path="/detalle-producto/iphone13" element={<Navigate to="/iphone13" replace />} />
           <Route path="/detalle-producto/iphone13pro" element={<Navigate to="/iphone13pro" replace />} />
-          {/* <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
+        {/*   <Route path="/detalle-producto/iphone12" element={<Navigate to="/iphone12" replace />} />
           <Route path="/detalle-producto/iphone11" element={<Navigate to="/iphone11" replace />} />
           <Route path="/detalle-producto/iphoneSE" element={<Navigate to="/iphoneSE" replace />} />
-          <Route path="/detalle-producto/iPhoneUsed" element={<Navigate to="/iPhoneUsed" replace />} />
-          <Route path="/detalle-producto/ipadAll" element={<Navigate to="/ipadAll" replace />} />
-          <Route path="/detalle-producto/ipadPro" element={<Navigate to="/ipadPro" replace />} />
+          <Route path="/detalle-producto/iPhoneUsed" element={<Navigate to="/iPhoneUsed" replace />} /> */}
+          <Route path="/detalle-producto/ipad" element={<Navigate to="/ipad" replace />} />
+         {/*  <Route path="/detalle-producto/ipadPro" element={<Navigate to="/ipadPro" replace />} />
           <Route path="/detalle-producto/ipadMini" element={<Navigate to="/ipadMini" replace />} />
           <Route path="/detalle-producto/ipad" element={<Navigate to="/ipad" replace />} />
           <Route path="/detalle-producto/ipadAir" element={<Navigate to="/ipadAir" replace />} />

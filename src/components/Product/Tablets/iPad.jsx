@@ -5,17 +5,16 @@ import Footer from '../../Footer/Footer';
 import { Link } from 'react-router-dom';
 
 const Ipad = () => {
-  const [IpadProducts, setIpadProducts] = useState([]);
+  const [ipadProducts, setIpadProducts] = useState([]);
   const [productImages, setProductImages] = useState({});
 
   useEffect(() => {
     const fetchIpadProducts = async () => {
       try {
-        const responses = await Promise.all([
-          axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/Tablets/name/iPad%20de')
-        ]);
-        const products = responses.flatMap(response => response.data);
+        const response = await axios.get('https://backend-tienda-mac-production.up.railway.app/products/category/Computación/subcategory/Tablets');
+        const products = response.data;
         setIpadProducts(products);
+
         products.forEach(async (product) => {
           try {
             const imageResponse = await axios.get(`https://backend-tienda-mac-production.up.railway.app/products/${product.id}/images`);
@@ -27,9 +26,10 @@ const Ipad = () => {
           }
         });
       } catch (error) {
-        console.error('Error fetching Ipad products:', error);
+        console.error('Error fetching iPad products:', error);
       }
     };
+
     fetchIpadProducts();
   }, []);
 
@@ -38,12 +38,12 @@ const Ipad = () => {
   };
 
   return (
-    <div className="ipad-products">
+    <div className="ipad-all-products">
       <Navbar />
       <div className="container py-5">
-        <h1 className="text-center mb-4 fs-4">iPad</h1>
+        <h1 className="text-center mb-4 fs-4">iPads</h1>
         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          {IpadProducts.map((product) => (
+          {ipadProducts.map((product) => (
             <div className="col" key={product.id}>
               <a href={`/detalle-producto/${product.id}`} className="text-decoration-none">
                 <div className="card h-100 small-card">
