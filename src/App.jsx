@@ -64,13 +64,13 @@ import AccesoriosParaMac from './components/Product/Accesorios/AccesoriosParaMac
 import AccesoriosParaWatch from './components/Product/Accesorios/AccesoriosParaWatch';
 import AccesoriosParaiPad from './components/Product/Accesorios/AccesoriosParaiPad';
 import AccesoriosParaiPhone from './components/Product/Accesorios/AccesoriosParaiPhone';
-import DetalleProducto from './components/Product/DetalleProducto';
 import SonidoAll from './components/Product/Sonido/SonidoAll';
 import Jbl from './components/Product/Sonido/Jbl';
 import Bose from './components/Product/Sonido/Bose';
 import Harman from './components/Product/Sonido/Harman';
 import AppleTV4k from './components/Product/AppleTV/AppleTV4k';
 import AppleTVyHogar from './components/Product/AppleTV/AppleTVyHogar'; */
+import DetalleProducto from './components/Product/DetalleProducto';
 import LoNuevo from './components/SubNavbar/LoNuevo';
 import Cart from './components/Cart/Cart';
 import { CartProvider } from './context/CartContext';
