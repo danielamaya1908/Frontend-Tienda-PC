@@ -11,7 +11,7 @@ import slidesShow4 from '../../img/slidesShow/Sonido.jpg'; // Cuarta imagen
 import slidesShow5 from '../../img/slidesShow/Accesorios.jpg'; // Quinta imagen
 import slidesShow6 from '../../img/slidesShow/Servicio_Tecnico.jpg'; // Sexta imagen
 import slidesShow7 from '../../img/slidesShow/Delivery.jpg'; // Séptima imagen
-import slidesShow8 from '../../img/slidesShow/SLIDESHOW_USADO.jpg'; // Octava imagen
+/* import slidesShow8 from '../../img/slidesShow/SLIDESHOW_USADO.jpg'; // Octava imagen */
 
 const Slideshow = () => {
   const [images, setImages] = useState([]);
@@ -28,7 +28,7 @@ const Slideshow = () => {
         slidesShow5,
         slidesShow6,
         slidesShow7,
-        slidesShow8, // Agregada la octava imagen
+/*         slidesShow8, // Agregada la octava imagen */
       ];
       setImages(loadedImages);
     };
